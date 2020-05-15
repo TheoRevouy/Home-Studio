@@ -1,6 +1,5 @@
 package Controller;
 
-import Element.MyWindow;
 import View.View;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -29,7 +28,7 @@ public class Home {
     }
 
     public void goToDrumPadView(ActionEvent actionEvent) throws IOException {
-        Parent drumPadViewParent = FXMLLoader.load(getClass().getResource("../Template/drumpad.fxml"));
+        Parent drumPadViewParent = FXMLLoader.load(getClass().getResource("../Template/drumpadKeyboard.fxml"));
         Scene drumPadView = new Scene(drumPadViewParent);
         Screen screen=Screen.getPrimary();;
         Rectangle2D bounds = screen.getVisualBounds();

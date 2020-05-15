@@ -26,7 +26,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Drumpad implements DrumpadKit, Initializable{
+public class DrumpadKeyboard implements DrumpadKit, Initializable{
 
     @FXML
     public Button backAtHomeButton;
@@ -47,7 +47,13 @@ public class Drumpad implements DrumpadKit, Initializable{
     public Button drumpadThirteen;
     public Button drumpadFourteen;
 
+    public Button recordButton;
+
+    public Button bindButton;
+
     public AnchorPane drumPadAnchorPane;
+
+
 
     @Override
     public  void initialize(URL location, ResourceBundle ressources){
@@ -179,5 +185,35 @@ public class Drumpad implements DrumpadKit, Initializable{
         tl.setCycleCount(Timeline.INDEFINITE);
         tl.play();
 
+    }
+
+    public void recordAudio(ActionEvent actionEvent) {
+        recordButton.setOnMousePressed(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                final SoundRecorder recorder = new SoundRecorder();
+                System.out.println("click here !");
+                // creates a new thread that waits for a specified
+                // of time before stopping
+                Thread stopper = new Thread(new Runnable() {
+                    public void run() {
+                        try {
+                            Thread.sleep(SoundRecorder.TIME);
+                        } catch (InterruptedException ex) {
+                            ex.printStackTrace();
+                        }
+                        recorder.finish();
+                    }
+                });
+
+                stopper.start();
+
+                // start recording
+                recorder.start();
+            }
+        });
+    }
+
+    public void changeBind(ActionEvent actionEvent) {
     }
 }
