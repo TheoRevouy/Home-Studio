@@ -53,6 +53,8 @@ public class DrumpadKeyboard implements DrumpadKit, Initializable{
 
     public AnchorPane drumPadAnchorPane;
 
+    private int count = 1 ;
+    private KeyFrame kf;
 
 
     @Override
@@ -141,25 +143,44 @@ public class DrumpadKeyboard implements DrumpadKit, Initializable{
 
     public void loop(Button button, String name) {
         AudioClip note = new AudioClip(this.getClass().getResource(name).toString());
+        Timeline tl4 = new Timeline();
+        Timeline tl3 = new Timeline();
+        Timeline tl2 = new Timeline();
+        Timeline tl1 = new Timeline();
 
         button.setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-                if(mouseEvent.getClickCount() % 5 == 1){
+                if(clickButton(button) % 5 == 1){
                     System.out.println("1");
-                    changeFrequency(note,5);
-                }else if(mouseEvent.getClickCount() % 5 == 2){
+                    changeFrequency(note,4,tl4);
+                }else if(clickButton(button) % 5 == 2){
                     System.out.println("2");
-                    changeFrequency(note,1);
-                }else if(mouseEvent.getClickCount() % 5 == 3){
+                    tl4.stop();
+                    changeFrequency(note,3,tl3);
+                }else if(clickButton(button) % 5 == 3){
                     System.out.println("3");
-                }else if(mouseEvent.getClickCount() % 5 == 4){
+                    tl3.stop();
+                    changeFrequency(note,2,tl2);
+                }else if(clickButton(button) % 5 == 4){
                     System.out.println("4");
-                }else if (mouseEvent.getClickCount() % 5 == 0){
+                    tl2.stop();
+                    changeFrequency(note,1,tl1);
+                }else if (clickButton(button) % 5 == 0){
                     System.out.println("0");
+                    tl1.stop();
                 }
             }
         });
+    }
+
+    public int clickButton(Button button){
+        button.setOnMouseClicked(mouseEvent -> {
+            count++;
+            System.out.println(count);
+        });
+
+        return count;
     }
 
     public void moussePressed(MouseEvent actionEvent) {
@@ -179,13 +200,16 @@ public class DrumpadKeyboard implements DrumpadKit, Initializable{
         loop(drumpadFourteen, DrumpadKit.VOCAL2);
     }
 
-    public void changeFrequency(AudioClip note, int duration){
-        Timeline tl = new Timeline(new KeyFrame(Duration.seconds(duration), actionEvent -> note.play()));
-        tl.stop();
+    public void changeFrequency(AudioClip note, int time, Timeline tl){
+        Duration duration = Duration.seconds(time);
+        EventHandler playNote = event -> note.play();
+        kf = new KeyFrame(duration, playNote);
+        tl.getKeyFrames().add(kf);
         tl.setCycleCount(Timeline.INDEFINITE);
         tl.play();
 
     }
+
 
     public void recordAudio(ActionEvent actionEvent) {
         recordButton.setOnMousePressed(new EventHandler<MouseEvent>() {

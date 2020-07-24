@@ -1,7 +1,5 @@
 package Controller;
 
-import javafx.scene.media.AudioClip;
-
 public interface DrumpadKit {
 
     public final String CLAP = "../Media/Sound/clap.wav";

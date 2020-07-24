@@ -2,19 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b86617a9-f1ef-455d-b28a-dd3f26562ea3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/SoundRecorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Orchestre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/orchestre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Théo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Théo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/Drumpad$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/Drumpad$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/Drumpad$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/Drumpad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$3$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/test.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Template/drumpad.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Drumpad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DrumpadKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Template/drumpadKeyboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Template/drumpadKeyboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Template/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Template/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DrumpadKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DrumpadKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DrumpadKit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DrumpadKit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Media/Sound/test.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/drumpad.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/drumpadKeyboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/drumpadKeyboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/drumpadKeyboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/home.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +50,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
@@ -80,7 +87,13 @@
       <workItem from="1588597508281" duration="2442000" />
       <workItem from="1588680455418" duration="18630000" />
       <workItem from="1589197453517" duration="10276000" />
-      <workItem from="1589549964337" duration="1510000" />
+      <workItem from="1589549964337" duration="43770000" />
+      <workItem from="1592221999457" duration="2444000" />
+      <workItem from="1592306663258" duration="3610000" />
+      <workItem from="1592397536152" duration="40971000" />
+      <workItem from="1594388938305" duration="5388000" />
+      <workItem from="1594908185384" duration="1620000" />
+      <workItem from="1595503625485" duration="2815000" />
     </task>
     <servers />
   </component>

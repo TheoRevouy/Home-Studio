@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.Orchestre">
+  <children>
+    <TabPane layoutX="68.0" layoutY="114.0" prefHeight="580.0" prefWidth="1454.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Piano">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+        <Tab text="_Trompette">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="594.0" prefWidth="1375.0" />
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <Button fx:id="backAtHomeButton" layoutX="1466.0" layoutY="40.0" mnemonicParsing="false" onAction="#backAtHome" text="Retour" />
+  </children>
+</AnchorPane>

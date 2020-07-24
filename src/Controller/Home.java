@@ -30,11 +30,22 @@ public class Home {
     public void goToDrumPadView(ActionEvent actionEvent) throws IOException {
         Parent drumPadViewParent = FXMLLoader.load(getClass().getResource("../Template/drumpadKeyboard.fxml"));
         Scene drumPadView = new Scene(drumPadViewParent);
-        Screen screen=Screen.getPrimary();;
+        Screen screen = Screen.getPrimary();;
         Rectangle2D bounds = screen.getVisualBounds();
 
         Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         View.setWindow(window, bounds, drumPadView);
+    }
+
+    public void goToOrchestreView(ActionEvent actionEvent) throws IOException{
+        Parent orchestreViewParent = FXMLLoader.load(getClass().getResource("../Template/orchestre.fxml"));
+        Scene orchestreView = new Scene(orchestreViewParent);
+        Screen screen = Screen.getPrimary();
+        Rectangle2D bounds = screen.getVisualBounds();
+
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+
+        View.setWindow(window,bounds, orchestreView);
     }
 }
