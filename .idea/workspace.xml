@@ -2,25 +2,122 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b86617a9-f1ef-455d-b28a-dd3f26562ea3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Orchestre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Template/orchestre.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Drum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/DrumKit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/DrumPadNumPad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Piano.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/PianoKit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Trumpet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/TrumpetKit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Picture/Logo.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Picture/drum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Picture/drumbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Picture/keyboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Picture/keypad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Picture/piano.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Picture/pianobg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Picture/trumpet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Picture/trumpetbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Drum/bassDrum1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Drum/bassDrum2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Drum/cym1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Drum/cym2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Drum/hat.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Drum/perc1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Drum/perc2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Drum/perc3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Drum/snare.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/DO.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/DO_O.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/DO_O_S.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/DO_S.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/FA.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/FA_S.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/LA.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/LA_S.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/MI.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/MI_S.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/RE.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/RE_S.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/SI.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/SI_S.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/SOL.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Piano/SOL_S.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Trumpet/TrumpetC4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Trumpet/TrumpetC5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Trumpet/TrumpetC6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Trumpet/TrumpetG3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Trumpet/TrumpetG4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Media/Sound/Trumpet/TrumpetG5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/background.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/background2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/backgroundDrum.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/backgroundDrumPad.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/backgroundPiano.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/backgroundTrumpet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/drum.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/drumButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/drumPadNumPad.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/keyboardButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/logo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/numPadButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/piano.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/piano.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/trumpet.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/trumpetButton.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Théo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Théo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$3$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard$4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKeyboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/DrumpadKit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Controller/Home.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Controller/Orchestre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/clap.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/fx1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/fx2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/hats.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/kick1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/kick2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/percs1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/percs2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/percs3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/percs4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/snare.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/stabe.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/vocal1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Media/Sound/vocal2.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Template/drumpadKeyboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Template/drumpadKeyboard.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Template/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/Template/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/Template/orchestre.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Home-Studio/View/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Home-Studio/View/View.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/DrumpadKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DrumpadKeyboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/DrumpadKit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DrumpadKit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Orchestre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Media/Sound/clap.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/Media/Sound/DrumPad/clap.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Media/Sound/fx1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/Media/Sound/DrumPad/fx1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Media/Sound/fx2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/Media/Sound/DrumPad/fx2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Media/Sound/hats.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/Media/Sound/DrumPad/hats.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Media/Sound/kick1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/Media/Sound/DrumPad/kick1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Media/Sound/kick2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/Media/Sound/DrumPad/kick2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Media/Sound/percs1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/Media/Sound/DrumPad/percs1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Media/Sound/percs2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/Media/Sound/DrumPad/percs2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Media/Sound/percs3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/Media/Sound/DrumPad/percs3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Media/Sound/percs4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/Media/Sound/DrumPad/percs4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Media/Sound/snare.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/Media/Sound/DrumPad/snare.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Media/Sound/stabe.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/Media/Sound/DrumPad/stabe.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Media/Sound/vocal1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/Media/Sound/DrumPad/vocal1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Media/Sound/vocal2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/Media/Sound/DrumPad/vocal2.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Template/drumpadKeyboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/drumpadKeyboard.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Template/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/orchestre.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/View.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +131,7 @@
         <option value="Interface" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -49,9 +147,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DocNum/Stundenbuch" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Théo\Desktop\L3\M1\TER\Home-Studio\src\Media\Sound\DrumPad" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -94,6 +198,8 @@
       <workItem from="1594388938305" duration="5388000" />
       <workItem from="1594908185384" duration="1620000" />
       <workItem from="1595503625485" duration="2815000" />
+      <workItem from="1595858446928" duration="1115000" />
+      <workItem from="1596627488022" duration="48614000" />
     </task>
     <servers />
   </component>

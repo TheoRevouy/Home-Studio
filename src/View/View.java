@@ -5,6 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
@@ -23,12 +25,14 @@ public class View extends Application {
     }
 
     public static void setWindow(Stage window, Rectangle2D bounds, Scene scene) {
+        Image icon = new Image(View.class.getResourceAsStream("../Media/Picture/logo.PNG"));
         window.setScene(scene);
         window.setX(bounds.getMinX());
         window.setY(bounds.getMinY());
         window.setWidth(bounds.getWidth());
         window.setHeight(bounds.getHeight());
         window.setResizable(false);
+        window.getIcons().add(icon);
 
         window.show();
     }

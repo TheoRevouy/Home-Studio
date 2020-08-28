@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="drumAnchorPane" onKeyPressed="#playDrum" prefHeight="900.0" prefWidth="1600.0" styleClass="bodybg" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.Drum">
+  <Button fx:id="backAtHomeButton" layoutX="1383.0" layoutY="94.0" mnemonicParsing="false" onAction="#backAtHome" styleClass="shiny-grey" text="Retour">
+    <stylesheets>
+      <URL value="@button.css" />
+    </stylesheets>
+  </Button>
+  <Button fx:id="trumpetButton" layoutX="48.0" layoutY="41.0" mnemonicParsing="false" onAction="#goToPlayTrumpet" prefHeight="114.0" prefWidth="133.0" styleClass="shiny-grey" text="">
+    <stylesheets>
+      <URL value="@trumpetButton.css" />
+    </stylesheets>
+  </Button>
+  <Button fx:id="pianoButton" layoutX="226.0" layoutY="41.0" mnemonicParsing="false" onAction="#goToPlayPiano" prefHeight="114.0" prefWidth="133.0" styleClass="shiny-grey" text="">
+    <stylesheets>
+      <URL value="@piano.css" />
+    </stylesheets>
+  </Button>
+  <stylesheets>
+    <URL value="@backgroundDrum.css" />
+  </stylesheets>
+  <Text layoutX="760.0" layoutY="615.0" scaleX="3.959537572254335" scaleY="2.682789197904071" strokeType="OUTSIDE" strokeWidth="0.0" text="V">
+    <font>
+      <Font name="Magneto Gras" size="12.0" fx:id="x1" />
+    </font>
+  </Text>
+  <Text font="$x1" layoutX="842.0" layoutY="615.0" scaleX="3.959537572254335" scaleY="2.682789197904071" strokeType="OUTSIDE" strokeWidth="0.0" text="B" />
+  <Text font="$x1" layoutX="728.0" layoutY="279.0" scaleX="3.959537572254335" scaleY="2.682789197904071" strokeType="OUTSIDE" strokeWidth="0.0" text="F" />
+  <Text font="$x1" layoutX="795.0" layoutY="279.0" scaleX="3.959537572254335" scaleY="2.682789197904071" strokeType="OUTSIDE" strokeWidth="0.0" text="G" />
+  <Text font="$x1" layoutX="860.0" layoutY="279.0" scaleX="3.959537572254335" scaleY="2.682789197904071" strokeType="OUTSIDE" strokeWidth="0.0" text="H" />
+  <Text font="$x1" layoutX="593.0" layoutY="596.0" scaleX="3.959537572254335" scaleY="2.682789197904071" strokeType="OUTSIDE" strokeWidth="0.0" text="D" />
+  <Text font="$x1" layoutX="1017.0" layoutY="596.0" scaleX="3.959537572254335" scaleY="2.682789197904071" strokeType="OUTSIDE" strokeWidth="0.0" text="J" />
+  <Text font="$x1" layoutX="593.0" layoutY="211.0" scaleX="3.959537572254335" scaleY="2.682789197904071" strokeType="OUTSIDE" strokeWidth="0.0" text="R" />
+  <Text font="$x1" layoutX="1008.0" layoutY="211.0" scaleX="3.959537572254335" scaleY="2.682789197904071" strokeType="OUTSIDE" strokeWidth="0.0" text="U" />
+</AnchorPane>

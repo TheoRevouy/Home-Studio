@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="trumpetAnchorPane" onKeyPressed="#playTrumpet" prefHeight="900.0" prefWidth="1600.0" styleClass="bodybg" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.Trumpet">
+  <Button fx:id="backAtHomeButton" layoutX="1383.0" layoutY="94.0" mnemonicParsing="false" onAction="#backAtHome" styleClass="shiny-grey" text="Retour">
+    <stylesheets>
+      <URL value="@button.css" />
+    </stylesheets>
+  </Button>
+  <Button fx:id="pianoButton" layoutX="46.0" layoutY="41.0" mnemonicParsing="false" onAction="#goToPlayPiano" prefHeight="114.0" prefWidth="133.0" styleClass="shiny-grey" text="">
+    <stylesheets>
+      <URL value="@piano.css" />
+    </stylesheets>
+  </Button>
+  <Button fx:id="drumButton" layoutX="226.0" layoutY="41.0" mnemonicParsing="false" onAction="#goToPlayDrum" prefHeight="114.0" prefWidth="133.0" styleClass="shiny-grey" text="">
+    <stylesheets>
+      <URL value="@drumButton.css" />
+    </stylesheets>
+  </Button>
+  <stylesheets>
+    <URL value="@backgroundTrumpet.css" />
+  </stylesheets>
+  <Text layoutX="646.0" layoutY="400.0" scaleX="3.855983869945936" scaleY="3.1324735582927774" strokeType="OUTSIDE" strokeWidth="0.0" text="S">
+    <font>
+      <Font name="Magneto Gras" size="12.0" fx:id="x1" />
+    </font>
+  </Text>
+  <Text font="$x1" layoutX="691.0" layoutY="354.0" scaleX="3.855983869945936" scaleY="3.1324735582927774" strokeType="OUTSIDE" strokeWidth="0.0" text="D" />
+  <Text font="$x1" layoutX="736.0" layoutY="308.0" scaleX="3.855983869945936" scaleY="3.1324735582927774" strokeType="OUTSIDE" strokeWidth="0.0" text="F" />
+  <Text font="$x1" layoutX="865.0" layoutY="567.0" scaleX="3.855983869945936" scaleY="3.1324735582927774" strokeType="OUTSIDE" strokeWidth="0.0" text="G" />
+  <Text font="$x1" layoutX="908.0" layoutY="521.0" scaleX="3.855983869945936" scaleY="3.1324735582927774" strokeType="OUTSIDE" strokeWidth="0.0" text="H" />
+  <Text font="$x1" layoutX="954.0" layoutY="475.0" scaleX="3.855983869945936" scaleY="3.1324735582927774" strokeType="OUTSIDE" strokeWidth="0.0" text="J" />
+</AnchorPane>

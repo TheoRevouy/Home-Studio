@@ -1,26 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import java.net.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="drumPadAnchorPane" onKeyPressed="#playDrumPad" prefHeight="900.0" prefWidth="1600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.DrumpadKeyboard">
+<AnchorPane fx:id="drumPadAnchorPane" onKeyPressed="#playDrumPad" prefHeight="900.0" prefWidth="1600.0" styleClass="bodybg" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.DrumpadKeyboard">
   <children>
-    <Button fx:id="backAtHomeButton" layoutX="1383.0" layoutY="94.0" mnemonicParsing="false" onAction="#backAtHome" text="Retour" />
-    <Button fx:id="drumpadOne" layoutX="409.0" layoutY="138.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="56.0" prefWidth="56.0" />
-    <Button fx:id="drumpadTwo" layoutX="474.0" layoutY="138.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="56.0" prefWidth="56.0" />
-    <Button fx:id="drumpadThree" layoutX="539.0" layoutY="138.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="56.0" prefWidth="56.0" />
-    <Button fx:id="drumpadFour" layoutX="409.0" layoutY="205.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="56.0" prefWidth="56.0" />
-    <Button fx:id="drumpadFive" layoutX="474.0" layoutY="205.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="56.0" prefWidth="56.0" />
-    <Button fx:id="drumpadSix" layoutX="539.0" layoutY="205.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="56.0" prefWidth="56.0" />
-    <Button fx:id="drumpadSeven" layoutX="409.0" layoutY="271.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="56.0" prefWidth="56.0" />
-    <Button fx:id="drumpadEight" layoutX="474.0" layoutY="271.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="56.0" prefWidth="56.0" />
-    <Button fx:id="drumpadNine" layoutX="539.0" layoutY="271.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="56.0" prefWidth="56.0" />
-    <Button fx:id="drumpadTen" layoutX="409.0" layoutY="337.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="56.0" prefWidth="56.0" />
-    <Button fx:id="drumpadEleven" layoutX="474.0" layoutY="337.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="56.0" prefWidth="56.0" />
-    <Button fx:id="drumpadTwelve" layoutX="539.0" layoutY="337.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="56.0" prefWidth="56.0" />
-    <Button fx:id="drumpadThirteen" layoutX="605.0" layoutY="138.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="123.0" prefWidth="56.0" />
-    <Button fx:id="drumpadFourteen" layoutX="605.0" layoutY="271.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="123.0" prefWidth="56.0" />
-    <Button fx:id="recordButton" layoutX="409.0" layoutY="558.0" mnemonicParsing="false" onAction="#recordAudio" text="record" />
-    <Button fx:id="bindButton" layoutX="1243.0" layoutY="94.0" mnemonicParsing="false" onAction="#changeBind" text="Changer raccourcis" />
+    <Button fx:id="backAtHomeButton" layoutX="1427.0" layoutY="94.0" mnemonicParsing="false" onAction="#backAtHome" styleClass="shiny-grey" text="Retour">
+      <stylesheets>
+        <URL value="@button.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="drumpadOne" layoutX="749.0" layoutY="401.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="98.0" prefWidth="98.0" styleClass="bodybg">
+      <stylesheets>
+        <URL value="@backgroundDrumPad.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="drumpadTwo" layoutX="865.0" layoutY="401.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="98.0" prefWidth="98.0" styleClass="bodybg">
+      <stylesheets>
+        <URL value="@backgroundDrumPad.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="drumpadThree" layoutX="816.0" layoutY="242.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="98.0" prefWidth="98.0" styleClass="bodybg">
+      <stylesheets>
+        <URL value="@backgroundDrumPad.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="drumpadFour" layoutX="816.0" layoutY="569.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="98.0" prefWidth="98.0" styleClass="bodybg">
+      <stylesheets>
+        <URL value="@backgroundDrumPad.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="drumpadFive" layoutX="934.0" layoutY="242.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="98.0" prefWidth="98.0" styleClass="bodybg">
+      <stylesheets>
+        <URL value="@backgroundDrumPad.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="drumpadSix" layoutX="586.0" layoutY="242.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="98.0" prefWidth="98.0" styleClass="bodybg">
+      <stylesheets>
+        <URL value="@backgroundDrumPad.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="drumpadSeven" layoutX="983.0" layoutY="401.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="98.0" prefWidth="98.0" styleClass="bodybg">
+      <stylesheets>
+        <URL value="@backgroundDrumPad.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="drumpadEight" layoutX="934.0" layoutY="569.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="98.0" prefWidth="98.0" styleClass="bodybg">
+      <stylesheets>
+        <URL value="@backgroundDrumPad.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="drumpadNine" layoutX="700.0" layoutY="242.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="98.0" prefWidth="98.0" styleClass="bodybg">
+      <stylesheets>
+        <URL value="@backgroundDrumPad.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="drumpadTen" layoutX="700.0" layoutY="569.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="98.0" prefWidth="98.0" styleClass="bodybg">
+      <stylesheets>
+        <URL value="@backgroundDrumPad.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="drumpadEleven" layoutX="586.0" layoutY="569.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="98.0" prefWidth="98.0" styleClass="bodybg">
+      <stylesheets>
+        <URL value="@backgroundDrumPad.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="drumpadTwelve" layoutX="467.0" layoutY="242.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="98.0" prefWidth="98.0" styleClass="bodybg">
+      <stylesheets>
+        <URL value="@backgroundDrumPad.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="drumpadThirteen" layoutX="635.0" layoutY="401.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="98.0" prefWidth="98.0" styleClass="bodybg">
+      <stylesheets>
+        <URL value="@backgroundDrumPad.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="drumpadFourteen" layoutX="516.0" layoutY="401.0" mnemonicParsing="false" onMousePressed="#moussePressed" prefHeight="98.0" prefWidth="98.0" styleClass="bodybg">
+      <stylesheets>
+        <URL value="@backgroundDrumPad.css" />
+      </stylesheets>
+    </Button>
+    <!--<Button fx:id="recordButton" layoutX="41.0" layoutY="854.0" mnemonicParsing="false" onAction="#recordAudio" text="record" />-->
+    <Button fx:id="bindButton" layoutX="1495.0" layoutY="689.0" mnemonicParsing="false" onAction="#goToDrumPadWithNumPad" prefHeight="88.0" prefWidth="74.0" styleClass="shiny-grey" text="">
+      <stylesheets>
+        <URL value="@button.css" />
+        <URL value="@numPadButton.css" />
+      </stylesheets>
+    </Button>
+    <Text layoutX="505.0" layoutY="372.0" scaleX="4.42703370389977" scaleY="1.315712187958884" strokeType="OUTSIDE" strokeWidth="0.0" text="E">
+      <font>
+        <Font name="Magneto Gras" size="12.0" fx:id="x1" />
+      </font>
+    </Text>
+    <Text font="$x1" layoutX="632.0" layoutY="372.0" scaleX="4.42703370389977" scaleY="1.315712187958884" strokeType="OUTSIDE" strokeWidth="0.0" text="R" />
+    <Text font="$x1" layoutX="746.0" layoutY="372.0" scaleX="4.42703370389977" scaleY="1.315712187958884" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+    <Text font="$x1" layoutX="862.0" layoutY="372.0" scaleX="4.42703370389977" scaleY="1.315712187958884" strokeType="OUTSIDE" strokeWidth="0.0" text="Y" />
+    <Text font="$x1" layoutX="980.0" layoutY="372.0" scaleX="4.42703370389977" scaleY="1.315712187958884" strokeType="OUTSIDE" strokeWidth="0.0" text="U" />
+    <Text font="$x1" layoutX="562.0" layoutY="541.0" scaleX="4.42703370389977" scaleY="1.315712187958884" strokeType="OUTSIDE" strokeWidth="0.0" text="D" />
+    <Text font="$x1" layoutX="681.0" layoutY="541.0" scaleX="4.42703370389977" scaleY="1.315712187958884" strokeType="OUTSIDE" strokeWidth="0.0" text="F" />
+    <Text font="$x1" layoutX="795.0" layoutY="541.0" scaleX="4.42703370389977" scaleY="1.315712187958884" strokeType="OUTSIDE" strokeWidth="0.0" text="G" />
+    <Text font="$x1" layoutX="911.0" layoutY="543.0" scaleX="4.42703370389977" scaleY="1.315712187958884" strokeType="OUTSIDE" strokeWidth="0.0" text="H" />
+    <Text font="$x1" layoutX="1029.0" layoutY="541.0" scaleX="4.42703370389977" scaleY="1.315712187958884" strokeType="OUTSIDE" strokeWidth="0.0" text="J" />
+    <Text font="$x1" layoutX="632.0" layoutY="706.0" scaleX="4.42703370389977" scaleY="1.315712187958884" strokeType="OUTSIDE" strokeWidth="0.0" text="C" />
+    <Text font="$x1" layoutX="747.0" layoutY="706.0" scaleX="4.42703370389977" scaleY="1.315712187958884" strokeType="OUTSIDE" strokeWidth="0.0" text="V" />
+    <Text font="$x1" layoutX="864.0" layoutY="706.0" scaleX="4.42703370389977" scaleY="1.315712187958884" strokeType="OUTSIDE" strokeWidth="0.0" text="B" />
+    <Text font="$x1" layoutX="982.0" layoutY="706.0" scaleX="4.42703370389977" scaleY="1.315712187958884" strokeType="OUTSIDE" strokeWidth="0.0" text="N" />
   </children>
+  <stylesheets>
+    <URL value="@background2.css" />
+  </stylesheets>
 </AnchorPane>

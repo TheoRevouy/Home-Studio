@@ -1,0 +1,7 @@
+.bodybg{
+    -fx-background-image: url("../Media/Picture/pianobg.png");
+    -fx-background-size: 384 369;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 616 200;
+    -fx-background-color: #44bcd8;
+}
